@@ -2,7 +2,7 @@
 
   ## Description
   
-    This is an API for a social network web application where users can share their thoughts, react to friends’ thoughts, and create a friend list. This app will use Express.js for routing, a MongoDB database, and the Mongoose ODM. 
+This is an API for a social network web application where users can share their thoughts, react to friends’ thoughts, and create a friend list. This app will use Express.js for routing, a MongoDB database, and the Mongoose ODM. 
 
   ## User Story
 
@@ -19,11 +19,11 @@
     GIVEN a social network API
     WHEN I enter the command to invoke the application
     THEN my server is started and the Mongoose models are synced to the MongoDB database
-    WHEN I open API GET routes in Insomnia for users and thoughts
+    WHEN I open API GET routes in Postman for users and thoughts
     THEN the data for each of these routes is displayed in a formatted JSON
-    WHEN I test API POST, PUT, and DELETE routes in Insomnia
+    WHEN I test API POST, PUT, and DELETE routes in Postman
     THEN I am able to successfully create, update, and delete users and thoughts in my database
-    WHEN I test API POST and DELETE routes in Insomnia
+    WHEN I test API POST and DELETE routes in Postman
     THEN I am able to successfully create and delete reactions to thoughts and add and remove friends to a user’s friend list
     ```
   
@@ -48,7 +48,7 @@
 
     USER
 
-    Create a new user: POST /api/users
+    Create a new user: POST /api/users | include username & email
     Get all users: GET /api/users
     Get a single user by its id: GET /api/users/:userId
     Update a user by its id: PUT /api/users/:userId
@@ -61,7 +61,7 @@
     
     THOUGHT
 
-    Create a new thought: POST /api/thoughts/
+    Create a new thought: POST /api/thoughts/ | include thoughtText
     Get all thoughts: GET /api/thoughts/
     Get a single thought by its id: GET /api/thoughts/:thoughtId
     Update a thought by its id: PUT /api/thoughts/:thoughtId
@@ -72,17 +72,13 @@
     Create a reaction: POST /api/thoughts/:thoughtId/reactions
     Delete a reaction by the reactionId: DEL /api/thoughts/:thoughtId/reactions/:reactionId
 
-  Screenshots:
-
-  ![Home Page](./Assets/techblog-home.png)
-
-  ![Login Page](./Assets/techblog-login.png)
+  Media:
 
   Here's a video of the app in action: [Video Link](https://drive.google.com/file/d/1UP6B7r3EFhdG2nAEJUu-6aokJxMwkWP8/view?usp=sharing).
   
   ## [License](#table-of-contents)
 
-  License Used: N/A
+  License Used: MIT
  
   ## [Contributing](#table-of-contents)
   
