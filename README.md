@@ -46,35 +46,43 @@ This is an API for a social network web application where users can share their 
   Connect to the MongoDB URI mongodb://localhost:27017
   Connect to the API routes using either Postman or Insomnia.
 
-    USER
+  USER
 
-    Create a new user: POST /api/users | include username & email
-    Get all users: GET /api/users
-    Get a single user by its id: GET /api/users/:userId
-    Update a user by its id: PUT /api/users/:userId
-    Delete a user by its id: DELETE /api/user/:userId
+  Create a new user: POST /api/users | include username & email
+  Get all users: GET /api/users
+  Get a single user by its id: GET /api/users/:userId
+  Update a user by its id: PUT /api/users/:userId
+  Delete a user by its id: DELETE /api/user/:userId
 
-    FRIEND
+  ![Postman User](./Assets/postman-api-users.png)
 
-    Add a new friend to a user's friend list: POST /api/users/:userid/friends/:friendId
-    Delete a friend from a user's friend list: DELETE /api/users/:userid/friends/:friendId
-    
-    THOUGHT
+  FRIEND
 
-    Create a new thought: POST /api/thoughts/ | include thoughtText
-    Get all thoughts: GET /api/thoughts/
-    Get a single thought by its id: GET /api/thoughts/:thoughtId
-    Update a thought by its id: PUT /api/thoughts/:thoughtId
-    Delete a thought by its id: DELETE /api/thoughts/:thoughtId
-    
-    REACTION
+  Add a new friend to a user's friend list: POST /api/users/:userid/friends/:friendId
+  Delete a friend from a user's friend list: DELETE /api/users/:userid/friends/:friendId
+  
+  ![Postman Friend](./Assets/postman-api-users-friends.png)
 
-    Create a reaction: POST /api/thoughts/:thoughtId/reactions
-    Delete a reaction by the reactionId: DEL /api/thoughts/:thoughtId/reactions/:reactionId
+  THOUGHT
+
+  Create a new thought: POST /api/thoughts/ | include thoughtText
+  Get all thoughts: GET /api/thoughts/
+  Get a single thought by its id: GET /api/thoughts/:thoughtId
+  Update a thought by its id: PUT /api/thoughts/:thoughtId
+  Delete a thought by its id: DELETE /api/thoughts/:thoughtId
+
+  ![Postman Thought](./Assets/postman-api-thoughts.png)
+  
+  REACTION
+
+  Create a reaction: POST /api/thoughts/:thoughtId/reactions
+  Delete a reaction by the reactionId: DEL /api/thoughts/:thoughtId/reactions/:reactionId
+
+  ![Postman Thought](./Assets/postman-api-thoughts-reactions.png)
 
   Media:
 
-  Here's a video of the app in action: [Video Link](https://drive.google.com/file/d/1UP6B7r3EFhdG2nAEJUu-6aokJxMwkWP8/view?usp=sharing).
+  Here's a video of the app in action: [Video Link](https://drive.google.com/file/d/1kXMSTMYoUeQmQfWj3Bq8n2ANL79fEIlt/view?usp=sharing).
   
   ## [License](#table-of-contents)
 
